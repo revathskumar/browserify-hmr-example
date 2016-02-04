@@ -1,11 +1,5 @@
-import {Component} from 'react';
+import React from 'react';
+import ReactDOM from 'react-dom';
+import Comp from './comp.jsx';
 
-class Comp extends Component {
-  render() {
-    return (
-      <div> React, Browserify, ES6, Gulp </div>
-    );
-  }
-}
-
-export default Comp;
+ReactDOM.render(<Comp />, document.getElementById('comp'));
